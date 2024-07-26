@@ -1,5 +1,4 @@
 - name: decalrarion of variables
-  hosts: localhost
   vars:
     Sub: ansible
     course: Devops
