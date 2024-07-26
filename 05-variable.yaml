@@ -1,0 +1,16 @@
+- name: variables from promt
+  hosts: localhost
+  vars_promt:
+  - name: Sub
+    promt: please enter subject
+    privet: false
+  - name: course
+    promt: please enter the course name
+    privet: false
+  - name: time
+    promt: please enter the duration
+    privet: true
+  tasks:
+  - name: variable tests
+    ansible.builtin.debug:
+      msg: We are learning {{Sub}} from the {{course}}, duration is {{time}}
