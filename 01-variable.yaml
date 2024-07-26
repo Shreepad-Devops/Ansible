@@ -1,0 +1,10 @@
+- name: test varible in play level
+  hosts: localhost
+  vars:
+    Sub: Ansible
+    Course: Devops
+    time: 12 hrs
+  tasks:
+    - name: class details
+      ansible.builtin.debug:
+        msg: We are learning {{Sub}} as part of{{Course}} and Total learing hour is {{time}}
