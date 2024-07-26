@@ -3,13 +3,13 @@
   vars_prompt:
   - name: Sub
     prompt: please enter subject
-    privet: false
+    private: false
   - name: course
     prompt: please enter the course name
-    privet: false
+    private: false
   - name: time
     prompt: please enter the duration
-    privet: true
+    private: true
   tasks:
   - name: variable tests
     ansible.builtin.debug:
