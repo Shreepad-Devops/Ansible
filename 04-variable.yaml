@@ -3,6 +3,6 @@
   vars_files:
   - vars.yaml
   tasks:
-    - name: variable tests
-      ansible.builtin.debug:
-        msg: We are learning {{Sub}} from the {{course}}, duration is {{time}}
+  - name: variable tests
+    ansible.builtin.debug:
+      msg: We are learning {{Sub}} from the {{course}}, duration is {{time}}
