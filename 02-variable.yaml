@@ -1,0 +1,10 @@
+- name: varibale at task level
+  hosts: localhost
+  tasks:
+    - name: variable test
+      vars:
+        Sub: ansible
+        course: Devops
+        time: 12hrs
+      ansible.builtin.debug:
+        msg: We are learning {{Sub}} from the {{course}}, duration is {{time}}
