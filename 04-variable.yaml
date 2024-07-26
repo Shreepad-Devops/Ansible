@@ -1,0 +1,6 @@
+- name: variable from another yaml file
+  hosts: localhost
+  tasks:
+    - name: variable tests
+      ansible.builtin.debug:
+        msg: We are learning {{Sub}} from the {{course}}, duration is {{time}}
