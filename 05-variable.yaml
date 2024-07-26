@@ -1,14 +1,14 @@
-- name: variables from promt
+- name: variables from prompt
   hosts: localhost
-  vars_promt:
+  vars_prompt:
   - name: Sub
-    promt: please enter subject
+    prompt: please enter subject
     privet: false
   - name: course
-    promt: please enter the course name
+    prompt: please enter the course name
     privet: false
   - name: time
-    promt: please enter the duration
+    prompt: please enter the duration
     privet: true
   tasks:
   - name: variable tests
