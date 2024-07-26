@@ -1,5 +1,7 @@
 - name: variable from another yaml file
   hosts: localhost
+  vars_files:
+  - vars.yaml
   tasks:
     - name: variable tests
       ansible.builtin.debug:
