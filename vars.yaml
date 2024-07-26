@@ -1,5 +1,4 @@
-- name: decalrarion of variables
-  vars:
-    Sub: ansible
-    course: Devops
-    time: 12hrs
+vars:
+  Sub: ansible
+  course: Devops
+  time: 12hrs
